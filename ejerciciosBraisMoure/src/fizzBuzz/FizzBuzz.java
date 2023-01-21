@@ -1,33 +1,30 @@
 package fizzBuzz;
 
 public class FizzBuzz {
-	
+
 	/**
-	 *  Enunciado: Escribe un programa que muestre por consola (con un print) los números de 1 a 100 
-	 *  (ambos incluidos y con un salto de línea entre cada impresión), sustituyendo los siguientes:
-	 * - Múltiplos de 3 por la palabra "fizz".
-	 * - Múltiplos de 5 por la palabra "buzz".
-	 * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
+	 * Enunciado: Escribe un programa que muestre por consola (con un print) los
+	 * números de 1 a 100 (ambos incluidos y con un salto de línea entre cada
+	 * impresión), sustituyendo los siguientes: - Múltiplos de 3 por la palabra
+	 * "fizz". - Múltiplos de 5 por la palabra "buzz". - Múltiplos de 3 y de 5 a la
+	 * vez por la palabra "fizzbuzz".
 	 */
-	
+
 	public static void fizzBuzz() {
-		
-		
+
 		for (int i = 1; i <= 100; i++) {
-			if ((i % 3 == 0) && (i % 5 == 0)) {
+			if ((i % 3 == 0) && (i % 5 == 0)) { //IMPORTANTE: empezar por la condición más restrictiva
 				System.out.println("fizzbuzz");
-			}else if (i % 3 == 0) {
+			} else if (i % 3 == 0) {
 				System.out.println("fizz");
-			}else if(i % 5 == 0)  {
+			} else if (i % 5 == 0) {
 				System.out.println("buzz");
-			}else {
+			} else {
 				System.out.println(i);
 			}
-			
+
 		}
-		
-		
-		
+
 	}
 
 	public static void main(String[] args) {
